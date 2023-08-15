@@ -9,8 +9,6 @@ import braintree from "braintree";
 // payment gateway
 dotenv.config();
 
-console.log(process.env.BRAINTREE_PRIVATE_KEY);
-
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
   merchantId: process.env.BRAINTREE_MERCHANT_ID,
@@ -111,7 +109,6 @@ export const getSingleProductController = async (req, res) => {
 // console.log(process.env.BRAINTREE_MERCHANT_ID,process.env.BRAINTREE_PUBLIC_KEY,BRAINTREE_PRIVATE_KEY)
 export const productPhotoController = async (req, res) => {
   try {
-    console.log(req.params.pid);
     const product = await productModel.findById(req.params.pid).select("photo");
     if (product.photo.data) {
       res.set("Content-type", product.photo.contentType);
@@ -230,7 +227,6 @@ export const productFilterController = async (req, res) => {
 export const productCountController = async (req, res) => {
   try {
     const total = await productModel.find({}).estimatedDocumentCount();
-    console.log("total" + total);
     res.status(200).send({
       success: true,
       total,

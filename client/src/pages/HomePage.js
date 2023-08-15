@@ -74,7 +74,6 @@ const HomePage = () => {
       const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/product/product-list/${page}`)
       setProducts([...products, ...data?.products])
       setLoading(false)
-      console.log(products)
     } catch (error) {
       console.log(error)
       setLoading(false)
@@ -98,7 +97,9 @@ const HomePage = () => {
   }, [checked.length, radio.length])
 
   useEffect(() => {
-    if (checked.length || radio.length) filterProduct()
+    if (checked.length || radio.length) 
+    
+    filterProduct()
   }, [checked, radio])
 
   //get filters product
