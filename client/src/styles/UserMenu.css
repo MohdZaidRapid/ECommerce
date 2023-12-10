@@ -1,0 +1,37 @@
+/* Add these styles to your existing stylesheet or create a new one */
+
+/* UserMenu Styles */
+.text-center {
+  margin-top: 20px;
+}
+
+.list-group {
+  width: 100%;
+}
+
+/* Dashboard Heading Style */
+.list-group h4 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* List Item Styles */
+.list-group-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #3498db; /* Change to your desired hover background color */
+  color: #fff; /* Change to your desired hover text color */
+}
+
+/* Active Link Styles */
+.list-group-item.active {
+  background-color: #3498db; /* Change to your desired active background color */
+  color: #fff; /* Change to your desired active text color */
+}

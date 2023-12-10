@@ -1,0 +1,44 @@
+/* UserDashboard.css */
+
+/* User Details Card Styling */
+.col-md-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Card background color */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* .card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: linear-gradient(45deg, #3498db, #8e44ad); /* Gradient background on hover */
+/* }  */
+
+.card h3 {
+  color: #333; /* Text color */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* .card:hover h3 {
+  color: #fff; /* Text color on hover */
+/* } */ 
+
+/* Adjustments for Small Screens */
+@media (max-width: 767px) {
+  .col-md-9 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,81 @@
+.navbar {
+  background: linear-gradient(
+    135deg,
+    #3498db,
+    #8e44ad
+  ); /* Gradient background color */
+}
+
+.navbar-brand {
+  color: #fff; /* Navbar brand text color */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ecf0f1; /* Navbar brand text color on hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Navbar toggler icon color */
+}
+
+/* Navigation Links Styling */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Navigation link text color */
+  margin-right: 15px; /* Adjust the spacing between links */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2c3e50; /* Darker color for navigation link text on hover */
+}
+
+/* Dropdown Styling */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #3498db; /* Dropdown menu background color */
+}
+
+.dropdown-item {
+  color: #fff; /* Dropdown item text color */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #2980b9; /* Dropdown item background color on hover */
+  color: #ecf0f1; /* Dropdown item text color on hover */
+}
+
+/* Badge Styling */
+.badge {
+  background-color: #e74c3c; /* Badge background color */
+  color: #fff; /* Badge text color */
+}
+
+/* Search Input Styling */
+.search-input {
+  margin-right: 15px; /* Adjust the spacing between search input and other links */
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-input {
+    margin-right: 0;
+  }
+}

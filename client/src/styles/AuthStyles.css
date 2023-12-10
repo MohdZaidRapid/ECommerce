@@ -1,5 +1,7 @@
 /* ===================================
 ========= register page  */
+
+/*
 .form-container {
   margin-top: 60px;
   display: flex;
@@ -40,17 +42,17 @@
 
 .form-container form button:hover {
   border: 1px solid black;
-  background: #000000; /* fallback for old browsers */
+  background: #000000; 
   background: -webkit-linear-gradient(
     to right,
     #434343,
     #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #434343,
     #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 }
 
 .forgot-btn {
@@ -60,4 +62,103 @@
 
 .forgot-btn:hover {
   color: white !important;
+}
+*/
+
+/* AuthStyles.css */
+
+/* General Styling */
+/* AuthStyles.css */
+
+/* AuthStyles.css */
+
+/* AuthStyles.css */
+
+/* AuthStyles.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container Styling */
+.form-container {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee, #bdddfc, #a1eafb);
+  perspective: 1000px; /* Set the perspective for the 3D effect */
+}
+
+/* Form Styling */
+.form-container form {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  background-color: transparent; /* Make the background transparent */
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.form-container form:hover {
+  transform: rotateY(360deg); /* Rotate 360 degrees on hover */
+}
+
+.form-container form .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color: #fff; /* Change the back side color as needed */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+/* Front and back faces of the card */
+.form-container form .front,
+.form-container form .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+
+/* Front face styles (visible when the form is not flipped) */
+.form-container form .front {
+  transform: rotateY(0deg);
+}
+
+/* Back face styles (visible when the form is flipped) */
+.form-container form .back {
+  transform: rotateY(180deg);
+}
+
+/* Additional styling for the back side content */
+.form-container form .back-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container form .back-content img {
+  width: 100%;
+  max-width: 200px; /* Adjust the max-width as needed */
+  border-radius: 10px; /* Optional: Add border-radius to the image */
 }
