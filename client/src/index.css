@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
-
 /* // navbar css */
 .navbar {
   font-family: "Poppins", sans-serif;
@@ -19,21 +16,17 @@
   --webkit-box-shadow: 0 8px 6px -6px grey;
   border-bottom: solid gray !important;
 }
-
 .nav-link {
   font-weight: 300 !important;
 }
-
 .active {
   border-bottom: 1px solid black;
 }
-
 .navbar-brand {
   font-weight: 700;
   font-family: "roboto", sans-serif;
   letter-spacing: 3px;
 }
-
 .footer {
   color: white;
   padding: 25px;
@@ -41,19 +34,16 @@
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
-
 .footer a {
   text-decoration: none;
   color: white;
   padding: 10px;
 }
-
 .footer a:hover {
   columns: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
-
-/* *************************** */
+/* ******************** */
 /* Page not found */
 .pnf {
   display: flex;
@@ -62,16 +52,13 @@
   align-items: center;
   justify-content: center;
 }
-
 .pnf-title {
   font-size: 100px;
   font-weight: 700;
 }
-
 .pnf-heading {
   font-weight: normal;
 }
-
 .pnf-btn {
   color: #000000;
   border: 1px solid black;
@@ -79,12 +66,10 @@
   padding: 10px;
   margin-top: 10px;
 }
-
 .pnf-btn:hover {
   background-color: black;
   color: white;
 }
-
 /* ========================================= */
 /* =========contact us ========= */
 .contactus {
@@ -95,13 +80,11 @@
   align-items: center;
   justify-content: center;
 }
-
 /* ==================== */
 .product-link {
   text-decoration: none !important;
   color: black !important;
 }
-
 .cat-btn {
   padding: 40px 0px;
   font-size: 24px;
@@ -111,23 +94,17 @@
   background-color: #434343;
   color: white;
 }
-
-/* ================
-====dashboard
-=================== */
-
+/* ================ ====dashboard =================== */
 .dashboard {
   margin-top: 100px !important;
 }
-
 .dashboard-menu h4 {
   background-color: #434343 !important;
   color: white;
   padding: 20px 0px;
 }
-
-/* *********************** */
-/* *********************** register page */
+/* ******************** */
+/* ******************** register page */
 /* .register {
   display: flex;
   align-items: center;
@@ -135,8 +112,18 @@
   height: 70vh;
   flex-direction: column;
 } */
-
 .product-link {
   text-decoration: none !important;
   color: black !important;
+}
+.category-filter {
+  background-color: rgba(173, 216, 230, 0.5);
+}
+.filter-margin,
+.filter-text-size {
+  margin-left: 12px;
+  /* font-size: large; */
+}
+.p-size {
+  font-size: large;
 }

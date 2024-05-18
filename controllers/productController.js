@@ -106,7 +106,7 @@ export const getSingleProductController = async (req, res) => {
   }
 };
 
-// console.log(process.env.BRAINTREE_MERCHANT_ID,process.env.BRAINTREE_PUBLIC_KEY,BRAINTREE_PRIVATE_KEY)
+
 export const productPhotoController = async (req, res) => {
   try {
     const product = await productModel.findById(req.params.pid).select("photo");
