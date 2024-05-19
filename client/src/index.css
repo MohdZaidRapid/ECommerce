@@ -118,12 +118,19 @@
 }
 .category-filter {
   background-color: rgba(173, 216, 230, 0.5);
+  /* padding-top: 12px; */
 }
 .filter-margin,
 .filter-text-size {
-  margin-left: 12px;
-  /* font-size: large; */
+  padding-left: 12px;
+  font-size: large;
 }
 .p-size {
   font-size: large;
+}
+
+.bg-bluish {
+  background: #855fc5;
+  padding-bottom: 12px;
+  font-size: 1.2rem;
 }

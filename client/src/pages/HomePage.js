@@ -114,9 +114,9 @@ const HomePage = () => {
   };
   return (
     <Layout title={"All products - Best offers"}>
-      <div className="row mt-3 category-filter ">
+      <div className="row mt-3 category-filter">
         <div className="col-md-3">
-          <h4 className="text-center ">Filter by Category</h4>
+          <h4 className="text-center">Filter by Category</h4>
           <div className="d-flex flex-column filter-margin">
             {categories?.map((c) => (
               <Checkbox
