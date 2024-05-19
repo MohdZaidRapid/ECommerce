@@ -9,7 +9,7 @@
 
 .home-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .home-page .card {
   background-color: rgba(128, 128, 128, 0.097);
